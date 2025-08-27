@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Event - ThisWeekend</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Submit Your Event</h1>
+        <p>Fill in the form below to share your event with the community.</p>
+    </header>
+
+    <main class="form-container">
+        <form action="#" method="post" enctype="multipart/form-data">
+            
+            <!-- Title -->
+            <label for="eventTitle">Event Title:</label>
+            <input type="text" id="eventTitle" name="eventTitle" required>
+
+            <!-- Description -->
+            <label for="eventDescription">Description:</label>
+            <textarea id="eventDescription" name="eventDescription" rows="5" required></textarea>
+
+            <!-- Date -->
+            <label for="eventDate">Date:</label>
+            <input type="date" id="eventDate" name="eventDate" required>
+
+            <!--Time -->
+            <label for="eventTime">Time:</label>
+            <input type="time" id="eventTime" name="eventTime" required>
+
+            <!--Image -->
+            <label for="eventImage">Upload Event Image:</label>
+            <input type="file" id="eventImage" name="eventImage" accept="image/*" required>
+
+            <!-- Category Selection -->
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="all">All Categories</option>
+                <option value="music">Music & Concerts</option>
+                <option value="nightlife">Groove & Nightlife</option>
+                <option value="art">Art & Exhibitions</option>
+                <option value="theatre">Theatre & Performance</option>
+                <option value="church">Church & Spiritual Gatherings</option>
+                <option value="festivals">Festivals & Markets</option>
+                <option value="sports">Sports & Fitness</option>
+                <option value="family">Family & Kids</option>
+                <option value="workshops">Workshops & Learning</option>
+            </select>
+
+            <!-- Province & City Selection -->
+            <label for="province">Province:</label>
+            <select id="province" name="province" required>
+                <option value="">Select Province</option>
+                <option value="gauteng">Gauteng</option>
+                <option value="western-cape">Western Cape</option>
+                <option value="kwazulu-natal">KwaZulu-Natal</option>
+                <option value="eastern-cape">Eastern Cape</option>
+                <option value="free-state">Free State</option>
+                <option value="limpopo">Limpopo</option>
+                <option value="mpumalanga">Mpumalanga</option>
+                <option value="north-west">North West</option>
+                <option value="northern-cape">Northern Cape</option>
+            </select>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" placeholder="Enter city" required>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Event</button>
+
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 ThisWeekend | All rights reserved.</p>
+    </footer>
+</body>
+</html>

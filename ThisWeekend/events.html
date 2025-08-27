@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThisWeekend - Events</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>ThisWeekend - Events</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="events.html" class="active">Events</a>
+            <a href="enquiry.html">Submit Event</a></li>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Filter Section -->
+        <section class="filters">
+            <h2>Filter Events</h2>
+            <form>
+                <!-- Category Filter -->
+                <label for="category">Category:</label>
+                <select id="category" name="category">
+                    <option>All Categories</option>
+                    <option>Music & Concerts</option>
+                    <option>Groove & Nightlife</option>
+                    <option>Art & Exhibitions</option>
+                    <option>Theatre & Performance</option>
+                    <option>Church & Spiritual Gatherings</option>
+                    <option>Festivals & Markets</option>
+                    <option>Sports & Fitness</option>
+                    <option>Family & Kids</option>
+                    <option>Workshops & Learning</option>
+                </select>
+
+                <!-- Location Filter -->
+                <label for="province">Province:</label>
+                <select id="province" name="province">
+                    <option>All Provinces</option>
+                    <option>Gauteng</option>
+                    <option>Western Cape</option>
+                    <option>KwaZulu-Natal</option>
+                    <option>Eastern Cape</option>
+                    <option>Free State</option>
+                    <option>Limpopo</option>
+                    <option>Mpumalanga</option>
+                    <option>North West</option>
+                    <option>Northern Cape</option>
+                </select>
+
+                <label for="city">City:</label>
+                <select id="city" name="city">
+                    <option>All Cities</option>
+                    <option>Johannesburg</option>
+                    <option>Pretoria</option>
+                    <option>Cape Town</option>
+                    <option>Durban</option>
+                    <option>Port Elizabeth</option>
+                    <option>Bloemfontein</option>
+                    <option>Polokwane</option>
+                    <option>Nelspruit</option>
+                    <option>Mahikeng</option>
+                    <option>Kimberley</option>
+                </select>
+
+                <button type="submit">Apply Filters</button>
+            </form>
+        </section>
+
+        <!-- Events Section -->
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <div class="event-card">
+                <img src="images/pexels-barbara-oliveira-734188-1578317.jpg" alt="Music Concert">
+                <h3>Summer Beats Festival</h3>
+                <p>Join us for an unforgettable night of live music and entertainment.</p>
+                <p><strong>Date:</strong> 25 August 2025</p>
+                <p><strong>Location:</strong> Johannesburg, Gauteng</p>
+            </div>
+
+            <div class="event-card">
+                <img src="images/pexels-barbara-oliveira-734188-1578317.jpg" alt="Art Exhibition">
+                <h3>Art in the City</h3>
+                <p>Explore stunning artworks from local artists in Nelspruit.</p>
+                <p><strong>Date:</strong> 30 August 2025</p>
+                <p><strong>Location:</strong> Nelspruit, Mpumalanga</p>
+            </div>
+
+            <div class="event-card">
+                <img src="images/pexels-barbara-oliveira-734188-1578317.jpg" alt="Sports Match">
+                <h3>Charity Football Match</h3>
+                <p>Support a good cause and enjoy a thrilling game of football.</p>
+                <p><strong>Date:</strong> 5 September 2025</p>
+                <p><strong>Location:</strong> Durban, KwaZulu-Natal</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ThisWeekend | All rights reserved.</p>
+    </footer>
+</body>
+</html>
