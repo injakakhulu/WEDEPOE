@@ -1,4 +1,28 @@
 # WEDEPOE
+UPdates on Part3
+Done Forms	Form Validation	Check if all required fields are filled before submitting the “Submit Event” or “Contact” form.	
+Done UI Experience	Image Preview	When a user uploads an image in the “Submit Event” form, show a live preview.
+User Data	Save Submitted Events (LocalStorage)	Save events locally in the browser (no backend needed yet). When page reloads, show those events again.	
+Done Utility	Live Date & Time Display	Show today’s date or a countdown to the event.
+DOne Navigation	bar on index for previewing upcomming events	
+Done Community	Testimonial Submission	Let users post testimonials dynamically on the About page (stored in localStorage).	
+MAde it responsive for smaller screen whith a drob down menue
+intergrated google maps on Contact us
+added Meta tags
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Reference  
