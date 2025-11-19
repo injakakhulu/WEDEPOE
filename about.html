@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+        <!--META TAGS-->
+    <meta name="description" content="ThisWeekend – your local events hub for music, markets, nightlife and community gatherings happening this weekend.">
+    <meta name="keywords" content="events, local events, South Africa events, ThisWeekend, markets, nightlife, things to do">
+    <meta name="author" content="ThisWeekend Team">
+     <!--META TAGS-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ThisWeekend</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body class="dark-theme">
+    
+    <header>
+        <h1>ThisWeekend</h1>
+    <div class="menu-icon" id="menuToggle">
+        &#8942;
+    </div>
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html"  class="active">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="submit-event.html" >Submit Event</a></li>
+                <li><a href="contact.html" >Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-section">
+        <h2>About Us</h2>
+        <p>We’re a local community hub bringing you the latest and greatest events happening in your city. Our mission is to connect people, celebrate culture, and make weekends unforgettable.</p>
+    </section>
+
+    <!-- COMMUNITY TESTIMONIALS -->
+    <section class="testimonials">
+        <h2>Community Testimonials</h2>
+        <div id="testimonialList">
+            <!-- Default Testimonials -->
+            <div class="testimonial">
+                <p>“ThisWeekend has helped me discover amazing local concerts and food festivals I’d never have found on my own.”</p>
+                <span>- Thabo M.</span>
+            </div>
+            <div class="testimonial">
+                <p>“I met so many amazing people at events I found through this site. It really brings the community together.”</p>
+                <span>- Sbara k.</span>
+            </div>
+        </div>
+        <!-- Form for submitting new testimonial -->
+        <h3>Share Your Experience</h3>
+        <form id="testimonialForm">
+            <input type="text" id="userName" placeholder="Your Name" required>
+            <textarea id="userTestimonial" placeholder="Your Testimonial" required></textarea>
+            <button type="submit">Submit Testimonial</button>
+        </form>
+    </section>
+
+    <!-- COMMUNITY GALLERY -->
+    <section class="gallery">
+        <h2>Community Gallery</h2>
+        <div id="galleryGrid" class="gallery-grid">
+            <!-- Default Images -->
+            <img src="images/pexels-pixabay-274192.jpg" alt="Event 1">
+            <img src="images/pexels-jibarofoto-2014775.jpg" alt="Event 2">
+            <img src="images/pexels-pixabay-274192.jpg" alt="Event 3">
+        </div>
+        <!-- Form for submitting new image -->
+        <h3>Share Your Event Photos</h3>
+        <form id="photoForm" enctype="multipart/form-data">
+            <input type="file" id="photoFile" accept="image/*" required>
+            <button type="submit">Submit Photo</button>
+        </form>
+    </section>
+
+
+        <script>
+  const dotMenu = document.getElementById("dotMenu");
+  const mobileNav = document.getElementById("mobileNav");
+
+  dotMenu.addEventListener("click", () => {
+    mobileNav.classList.toggle("active");
+  });
+</script>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© <span id="year"></span> ThisWeekend | All rights reserved..</p>
+      
+    </footer>
+
+</body>
+</html>

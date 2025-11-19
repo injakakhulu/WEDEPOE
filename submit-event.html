@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+        <!--META TAGS-->
+    <meta name="description" content="ThisWeekend – your local events hub for music, markets, nightlife and community gatherings happening this weekend.">
+    <meta name="keywords" content="events, local events, South Africa events, ThisWeekend, markets, nightlife, things to do">
+    <meta name="author" content="ThisWeekend Team">
+     <!--META TAGS-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Event - ThisWeekend</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+
+        <h1>ThisWeekend</h1>
+          <!-- 3 Dots Menu (Mobile Only) -->
+    <div class="menu-icon" id="menuToggle">
+        &#8942;
+    </div>
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="submit-event.html" class="active">Submit Event</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="form-container">
+
+        <!-- ADDED ID SO JAVASCRIPT CAN FIND THE FORM -->
+        <form action="#" method="post" enctype="multipart/form-data" id="submitEventForm">
+            
+            <!-- Title -->
+            <label for="eventTitle">Event Title:</label>
+            <input type="text" id="eventTitle" name="eventTitle" required>
+
+            <!-- Description -->
+            <label for="eventDescription">Description:</label>
+            <textarea id="eventDescription" name="eventDescription" rows="5" required></textarea>
+
+            <!-- Date -->
+            <label for="eventDate">Date:</label>
+            <input type="date" id="eventDate" name="eventDate" required>
+
+            <!--Time -->
+            <label for="eventTime">Time:</label>
+            <input type="time" id="eventTime" name="eventTime" required>
+
+            <!-- Image Upload -->
+            <label for="eventImage">Upload Event Image:</label>
+            <input type="file" id="eventImage" name="eventImage" accept="image/*" required>
+
+            <!-- Image Preview -->
+            <div id="imagePreviewContainer" style="margin-top: 15px; display:none;">
+                <p style="color:#E0E0E0;">Image Preview:</p>
+                <img id="imagePreview" src="" alt="Event Image Preview" style="
+                    max-width: 200px;
+                    border-radius: 10px;
+                    border: 1px solid #444;
+                ">
+            </div>          
+
+            <!-- Category Selection -->
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="all">All Categories</option>
+                <option value="music">Music & Concerts</option>
+                <option value="nightlife">Groove & Nightlife</option>
+                <option value="art">Art & Exhibitions</option>
+                <option value="theatre">Theatre & Performance</option>
+                <option value="church">Church & Spiritual Gatherings</option>
+                <option value="festivals">Festivals & Markets</option>
+                <option value="sports">Sports & Fitness</option>
+                <option value="family">Family & Kids</option>
+                <option value="workshops">Workshops & Learning</option>
+            </select>
+
+            <!-- Province & City Selection -->
+            <label for="province">Province:</label>
+            <select id="province" name="province" required>
+                <option value="">Select Province</option>
+                <option value="gauteng">Gauteng</option>
+                <option value="western-cape">Western Cape</option>
+                <option value="kwazulu-natal">KwaZulu-Natal</option>
+                <option value="eastern-cape">Eastern Cape</option>
+                <option value="free-state">Free State</option>
+                <option value="limpopo">Limpopo</option>
+                <option value="mpumalanga">Mpumalanga</option>
+                <option value="north-west">North West</option>
+                <option value="northern-cape">Northern Cape</option>
+            </select>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" placeholder="Enter city" required>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Event</button>
+
+        </form>
+    </main>
+
+           <script>
+  const dotMenu = document.getElementById("dotMenu");
+  const mobileNav = document.getElementById("mobileNav");
+
+  dotMenu.addEventListener("click", () => {
+    mobileNav.classList.toggle("active");
+  });
+</script>
+
+    <footer>
+        <p>© <span id="year"></span> ThisWeekend | All rights reserved..</p>
+      
+    </footer>
+
+</body>
+</html>
