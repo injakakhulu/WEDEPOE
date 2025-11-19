@@ -326,3 +326,299 @@ button:hover {
 .contact-form button:hover {
     background-color: #800040;
 }
+
+/* index event xxxxxxx */
+/* Featured Events */
+.featured-events {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.featured-events h3 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* Carousel styling */
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    justify-content: flex-start;
+}
+
+.event-card {
+    background-color: #1A1A1A; /* Dark card background */
+    border: 1px solid #333;
+    border-radius: 8px;
+    display: inline-block;
+    width: 300px; /* Event card width */
+    margin: 0 10px; /* Margin between cards */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+    transition: transform 0.2s;
+}
+
+.event-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.event-card h4 {
+    margin: 15px 0 5px;
+    color: #ffb3d1; /* Light magenta text */
+}
+
+.event-card p {
+    padding-bottom: 15px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Carousel navigation buttons */
+.carousel-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+    font-size: 1.5em;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+/* Hover effect for navigation buttons */
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .event-card {
+        width: 250px; /* Adjust card width on smaller screens */
+    }
+    .carousel-container {
+        width: 100%;
+    }
+}
+/*
+  next button index
+
+*/
+/* Featured Events */
+.featured-events {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.featured-events h3 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* Carousel Styling */
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    justify-content: flex-start;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.event-card {
+    background-color: #1A1A1A;
+    border: 1px solid #333;
+    border-radius: 8px;
+    display: inline-block;
+    width: 45%; /* Adjust width to show 2 cards at a time */
+    margin: 0 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+    transition: transform 0.2s;
+}
+
+.event-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.event-card h4 {
+    margin: 15px 0 5px;
+    color: #ffb3d1;
+}
+
+.event-card p {
+    padding-bottom: 15px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Carousel Navigation Buttons */
+.carousel-btn {
+    background-color: #A00060;
+    color: white;
+    border: none;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+    font-size: 1.5em;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+/* Hover effect for navigation buttons */
+.carousel-btn:hover {
+    background-color: #800040;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .event-card {
+        width: 90%; /* Full width for smaller screens */
+    }
+    .carousel-container {
+        width: 100%;
+    }
+}
+.featured-events {
+    padding: 40px 20px;
+    text-align: center;
+    position: relative; /* ADD THIS */
+}
+
+.hero-title, 
+.hero-subtitle {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1.2s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* pushes items left & right */
+    align-items: center;
+    padding: 10px 20px;
+    background: #ffffff;
+    position: relative;
+}
+
+/* Menu Icon (3 dots) */
+.menu-icon {
+    font-size: 26px;
+    cursor: pointer;
+    display: none; /* hidden on large screens */
+    position: absolute;
+    right: 20px; /* THIS pushes it to the right */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Hide nav links on mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background: #fff;
+        position: absolute;
+        right: 10px;
+        top: 60px;
+        padding: 15px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        border-radius: 6px;
+    }
+
+    .menu-icon {
+        display: block; /* show 3 dots only on mobile */
+    }
+}
+
+/* HEADER LAYOUT */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background: #000;
+    color: #fff;
+    position: relative;
+}
+
+/* Desktop Links Visible */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+/* Hide mobile menu icon on desktop */
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+
+    /* Hide desktop nav */
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #111;
+        padding: 15px 20px;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+
+    /* Show when active */
+    .nav-links.active {
+        display: flex;
+    }
+
+    /* Show 3 dots */
+    .menu-icon {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+}
